@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/text_uid_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_uid_info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/power_chart"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+    </lecho.lib.hellocharts.view.LineChartView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_packName_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dip"
+            android:text="当前测试应用为："/>
+
+        <TextView
+            android:id="@+id/text_pgk_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="当前测试应用"
+            android:paddingTop="50dip"
+            android:layout_toRightOf="@id/text_packName_text"/>
+
+        <TextView
+            android:id="@+id/app_power_use_info"
+            android:layout_below="@id/text_packName_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

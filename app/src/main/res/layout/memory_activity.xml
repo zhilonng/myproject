@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统可用内存为："></TextView>
+
+        <TextView
+            android:id="@+id/tvAvailMemory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFD700"></TextView>
+
+        <Button
+            android:id="@+id/btProcessInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看进程信息"></Button>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_purple" />
+
+    <ListView
+        android:id="@+id/processList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/light_purple"
+        android:listSelector="@color/light_purple" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/layout_height_test"
+        android:layout_marginBottom="@dimen/layout_marginBottom_test"
+        android:layout_marginLeft="@dimen/layout_marginLeft_test"
+        android:layout_marginRight="@dimen/layout_marginRight_test"
+        android:layout_marginTop="@dimen/layout_marginTop_test"
+        android:background="@drawable/test_button"
+        android:text="@string/start_test"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_test" />
+</LinearLayout>

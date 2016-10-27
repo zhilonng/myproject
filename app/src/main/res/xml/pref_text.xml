@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_save_text"
+        android:title="@string/save_text"
+        android:summaryOn="@string/save_log"
+        android:summaryOff="@string/no_save_log"/>
+    <PreferenceScreen
+        android:key="@string/pref_display_logs"
+        android:title="@string/display_logs" />
+
+</PreferenceScreen>

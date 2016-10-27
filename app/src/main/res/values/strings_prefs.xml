@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pref_auto_filter">pref_auto_filter</string>
+    <string name="pref_log_level">pref_log_level</string>
+    <string name="pref_tag_filter">pref_tag_filter</string>
+    <string name="pref_tag_filter_set">pref_tag_filter_set</string>
+    <string name="pref_key_filter">pref_key_filter</string>
+    <string name="pref_key_filter_set">pref_key_filter_set</string>
+    <string name="pref_app_filter">pref_app_filter</string>
+    <string name="pref_app_filter_set">pref_app_filter_set</string>
+    <string name="pref_save_text">pref_save_text</string>
+    <string name="save_text">Save Log</string>
+    <string name="pref_display_logs">pref_display_logs</string>
+    <string name="display_logs">Display logs</string>
+    <string name="auto_filter_summary">Show test app only</string>
+    <string name="no_app_filter">No test app</string>
+
+    <string name="save_log">Your log saved in /sdcard/Goastlogs</string>
+    <string name="pref_root_fail_count">pref_root_fail_count</string>
+
+    //toolbar_item
+    <string name="item_01">CPU</string>
+    <string name="item_02">FPS</string>
+    <string name="item_03">Memory</string>
+    <string name="item_04">耗电量</string>
+
+    <string-array name="levels_values">
+        <item>V</item>
+        <item>D</item>
+        <item>I</item>
+        <item>W</item>
+        <item>E</item>
+        <item>A</item>
+    </string-array>
+
+</resources>

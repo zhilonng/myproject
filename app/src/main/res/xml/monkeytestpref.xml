@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+       <PreferenceCategory android:title="常规设置">
+             <EditTextPreference
+                 android:key="@string/seed"
+                 android:title="seed值"
+                 android:dialogTitle="设置seed值"
+                 android:inputType="number"
+                 />
+           <ListPreference
+               android:defaultValue="1"
+               android:key="@string/level"
+               android:dialogTitle="设置日志级别"
+               android:entries="@array/levels_value"
+               android:entryValues="@array/levels_value"
+               android:title="日志级别" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="事件参数设置">
+           <EditTextPreference
+               android:key="@string/throttle"
+               android:title="事件时延"
+               android:dialogTitle="设置事件时延"
+               android:inputType="number"
+               />
+           <EditTextPreference
+               android:key="@string/count"
+               android:title="事件总数"
+               android:dialogTitle="设置事件总数"
+               android:inputType="number"
+               />
+           <EditTextPreference
+               android:key="@string/touch"
+               android:title="--pct-touch"
+               android:dialogTitle="设置点击事件总数"
+               android:inputType="number"
+               />
+    </PreferenceCategory>
+       <PreferenceCategory android:title="条件参数设置">
+           <CheckBoxPreference
+               android:defaultValue="false"
+               android:key="@string/security"
+               android:title="–ignore-security-exceptions"
+              />
+           <CheckBoxPreference
+               android:defaultValue="false"
+               android:key="@string/crashes"
+               android:title="–ignore-crashes"
+               />
+           <CheckBoxPreference
+               android:defaultValue="timeouts"
+               android:key="@string/timeouts"
+               android:title="–ignore-timeouts"
+               />
+           </PreferenceCategory>
+</PreferenceScreen>

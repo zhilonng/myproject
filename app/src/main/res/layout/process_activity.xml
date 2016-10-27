@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_bar"
+        android:id="@+id/head"/>
+    <fragment
+        android:id="@+id/fragment_sys"
+        android:name="com.cn21.speedtest.fragment.SystemAppFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"/>
+
+    <fragment
+        android:id="@+id/fragment_user"
+        android:name="com.cn21.speedtest.fragment.UserAppFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"/>
+
+    <fragment
+        android:id="@+id/fragment_running"
+        android:name="com.cn21.speedtest.fragment.ProcessFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"/>
+    <RadioGroup
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/chose_sys_app"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:checked="true"
+            android:textSize="12dip"
+            android:text="系统应用"
+            android:background="@drawable/radio"/>
+
+        <RadioButton
+            android:id="@+id/chose_user_app"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:checked="true"
+            android:textSize="12dip"
+            android:text="第三方应用"
+            android:background="@drawable/radio"/>
+
+        <RadioButton
+            android:id="@+id/chose_running_app"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:checked="true"
+            android:text="正在进行"
+            android:textSize="12dip"
+            android:background="@drawable/radio"/>
+    </RadioGroup>
+
+</LinearLayout>

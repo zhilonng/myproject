@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/input_hosts_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入方案名称"
+        android:textSize="20dp"
+        android:enabled="true"/>
+
+    <LinearLayout
+        android:id="@+id/button_layout_create"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/create_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确认"/>
+        <Button
+            android:id="@+id/create_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="取消"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/hosts_file"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/input_hosts_name"
+        android:layout_above="@id/button_layout_create"
+        android:text="127.0.0.1           localhost"
+        android:minLines="8"
+        android:maxLines="10"
+        android:enabled="true"
+        android:scrollbars="vertical"
+        android:gravity="top"/>
+
+</RelativeLayout>
